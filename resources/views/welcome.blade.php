@@ -50,9 +50,17 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('login')}}">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    {{-- <i class="fas fa-fw fa-tachometer-alt"></i> --}}
+                    <i class=" 	fa fa-edit" aria-hidden="true"></i>
+
                     <span>Login</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url('register')}}">
+                    {{-- <i class="fas fa-fw fa fa-tachometer-alt"></i> --}}
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    <span>Register</span></a>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
