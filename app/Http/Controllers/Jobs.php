@@ -13,4 +13,7 @@ class Jobs extends Controller
     public function table(){
         return view('visualisation.table');
     }
+    public function register(){
+        return view('users.register');
+    }
 }

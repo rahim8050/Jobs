@@ -42,10 +42,15 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+           <li class="nav-item active">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
+            </li> 
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url('login')}}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Login</span></a>
             </li>
 
             <!-- Divider -->
@@ -700,7 +705,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website 2025</span>
                     </div>
                 </div>
             </footer>
