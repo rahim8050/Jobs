@@ -9,3 +9,4 @@ Route::get('/', function () {
 Route::get('/login', [Jobs::class, 'login'])->name('login');
 Route::get('/table', [Jobs::class, 'table'])->name('table');
 Route::get('/register',[Jobs::class, 'register'])->name('register');
+Route::get('/update',[Jobs::class, 'update'])->name('update');

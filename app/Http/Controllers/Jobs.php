@@ -16,4 +16,7 @@ class Jobs extends Controller
     public function register(){
         return view('users.register');
     }
+    public function update(){
+        return view('home.update');
+    }
 }
