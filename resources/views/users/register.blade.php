@@ -17,26 +17,42 @@
                                 <form class="user">
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            <input type="text" name="name" class="form-control form-control-user" id="exampleFirstName"
                                                 placeholder="First Name">
+                                                @error('name')
+                                                <p class="text-red-500 text xs mt-1">{{$message}}</p> 
+                                                @enderror
                                         </div>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            <input type="text" name="lastname" class="form-control form-control-user" id="exampleLastName"
                                                 placeholder="Last Name">
+                                                @error('lastname')
+                                                <p class="text-red-500 text xs mt-1">{{$message}}</p>
+                                                @enderror
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail"
                                             placeholder="Email Address">
+                                            @error('email')
+                                            <p class="text-red-500 text xs mt-1">{{$message}}</p>
+                                            @enderror
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="password" class="form-control form-control-user"
+                                            <input type="password" name="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
+                                                @error('password')
+                                                <p class="text-red-500 text xs mt-1">{{$message}}</p>
+                                                @enderror
                                         </div>
+
                                         <div class="col-sm-6">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="exampleRepeatPassword" placeholder="Repeat Password">
+                                            <input type="password" name="password_confirmation" class="form-control form-control-user"
+                                                id="exampleRepeatPassword" placeholder="Password_confirmation">
+                                                @error('password_confirmation')
+                                                <p class="text-red-500 text xs mt-1">{{$message}}</p>
+                                                @enderror
                                         </div>
                                     </div>
                                     <a href="login.html" class="btn btn-primary btn-user btn-block">
