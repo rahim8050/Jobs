@@ -6,7 +6,8 @@
             <h2 class="text-2xl font-bold uppercase mb-1">
                 Edit Gig
             </h2>
-            {{-- <p class="mb-4">Edit: {{$listing->title}}</p> --}}
+            <p class="text-gray-400">
+                Update your job listing </p>
         </header>
 
         <form method="POST" action="" enctype="multipart/form-data">
@@ -121,11 +122,7 @@
                     name="logo"
                   
                 />
-                {{-- <img
-                            class="w-48 mr-6 mb-6"
-                             src="{{ $listing->logo ? asset('storage/'.$listing->logo) : asset('/images/no-image.png') }}"
-            alt=""
-                        /> --}}
+              
 
                 
                 @error('logo')

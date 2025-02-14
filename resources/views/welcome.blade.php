@@ -62,6 +62,7 @@
                     <i class="fa-solid fa-address-card"></i>
 
                     <span>Register</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
