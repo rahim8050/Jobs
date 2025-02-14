@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Rahim Jobs Find a job of your Choice</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom fonts for this template-->
     <link href="{{url ('frontend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
@@ -53,7 +53,7 @@
     {{ $slot }}
     </main>
         
-
+    
     <!-- Bootstrap core JavaScript-->
     <script src="{{('frontendvendor/jquery/jquery.min.js')}}"></script>
     <script src="{{url('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

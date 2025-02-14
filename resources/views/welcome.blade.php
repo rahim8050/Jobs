@@ -11,7 +11,7 @@
     <link rel="icon" href="{{url('frontend/img/home.ico')}}">
 
     <title>Rahim Jobs</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom fonts for this template-->
     <link href="{{url ('frontend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
@@ -50,15 +50,16 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('login')}}">
-                    {{-- <i class="fas fa-fw fa-tachometer-alt"></i> --}}
-                    <i class=" 	fa fa-edit" aria-hidden="true"></i>
+                 
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                  
 
                     <span>Login</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('register')}}">
-                    {{-- <i class="fas fa-fw fa fa-tachometer-alt"></i> --}}
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                 
+                    <i class="fa-solid fa-address-card"></i>
 
                     <span>Register</span></a>
 
@@ -121,7 +122,7 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            <input type="text" name="search" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
