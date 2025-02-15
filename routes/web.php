@@ -12,6 +12,6 @@ Route::get('/login', [UserController::class, 'login'])->name('login');
 Route::get('/table', [Jobs::class, 'table'])->name('table');
 Route::get('/register',[UserController::class, 'register'])->name('register');
 Route::get('/update',[Jobs::class, 'update'])->name('update');
-Route::post('/auth', [UserController::class, 'auth']);
+Route::post('/auth', [UserController::class, 'auth'])->name('auth');
 // add new user
 Route::post('/users', [UserController::class, 'store']);

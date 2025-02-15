@@ -71,7 +71,7 @@
                                             />
                                             @error('password')
                                             <p class="text-red-500 text-xs mt-1">
-                                                Please enter a valid email
+                                                Please enter a valid password
                                             </p> 
                                             @enderror
                                         </div>
