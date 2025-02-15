@@ -160,9 +160,12 @@
                             </div>
             
                         </li>
-                        <ul class="navbar-nav ml-auto">
-                        <li>
-                            welcome to rahim jobs {{ Auth::user()->name }}
+                       
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <span class="navbar-text">
+                                Welcome to Rahim Jobs, {{ Auth::user()->name }}
+                            </span>
                         </li>
                     </ul>
 
