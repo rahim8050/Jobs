@@ -158,7 +158,13 @@
                                     </div>
                                 </form>
                             </div>
+            
                         </li>
+                        <ul class="navbar-nav ml-auto">
+                        <li>
+                            welcome to rahim jobs {{ Auth::user()->name }}
+                        </li>
+                    </ul>
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
