@@ -76,6 +76,13 @@
 
                     <span>Register</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url('register')}}">
+                 
+                    <i class="fa-solid fa-user-doctor"></i>
+
+                    <span>Available Jobs</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
