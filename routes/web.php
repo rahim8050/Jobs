@@ -19,6 +19,7 @@ return view('users.jobs', [
 ]);
    
  })->name('jobs');  
+ 
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
 Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])

@@ -11,8 +11,6 @@
         <div class="col-sm-4">
             {{$slot}}
         </div>
-        <div class="col-sm-4">
-            {{$slot}}
-        </div>
+        
     </div>
 </div>
