@@ -77,7 +77,7 @@
                     <span>Register</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="{{url('register')}}">
+                <a class="nav-link" href="{{url('jobs')}}">
                  
                     <i class="fa-solid fa-user-doctor"></i>
 
