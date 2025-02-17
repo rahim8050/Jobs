@@ -13,33 +13,18 @@ Route::get('/', function () {
  Route::get('/jobs',function(){
     
 return view('users.jobs', [
-    'jobs' =>[
-        [
-            'id'=>1,
-            'title'=>'job one',
-            'description'=>'lorem ipsium delectus sufacation em sue dueets licas dtyiop uoums',
-            'tags'=>'Laravel Mysql Django',
-        ],
-        [
-            'id'=>2,
-            'title'=>'job two',
-            'description'=>'lorem ipsum freity sioni duet ems fract ico siem liam payse payne ',
-            'tags'=>'Laravel Mysql Django',
-        ]
-        
-
-    ]
+    'jobs' => Work::all()
      
     
 ]);
    
  })->name('jobs');  
- // single job
-//  Route::get('/jobs/{id}',function($id){
-//     return view('users.job',[
-//         'jobs'=> Work::find($id)
-//     ]);
-//  });
+//  single job
+ Route::get('/jobs/{id}',function($id){
+    return view('users.job',[
+        'job'=> Work::find($id)
+    ]);
+ });
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
 Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])

@@ -1,14 +1,5 @@
 
     {{-- @include('partials.search') --}}
-
-
-
-            
-                
-
-    
-   
- 
     @unless (count($jobs)==0)
 
     @foreach ($jobs as $job )
