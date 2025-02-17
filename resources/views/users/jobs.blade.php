@@ -1,8 +1,13 @@
 <x-bootstrapcss>
     <x-card>
     @include('partials.search')
+    <div
+                class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4"
+            >
+            
+                
+             
  
-    <x-styling>
     @unless (count($jobs)==0)
 
     @foreach ($jobs as $job )
@@ -15,7 +20,8 @@
     @else
     <p class="text-info">no job found</p>
     @endunless
-    </x-styling>
+
+    </div>
 </x-card>
 </x-bootstrapcss>
     
