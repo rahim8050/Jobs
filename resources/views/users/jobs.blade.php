@@ -1,7 +1,7 @@
 <x-bootstrapcss>
     <x-card>
     @include('partials.search')
-    </x-card>
+ 
     <x-styling>
     @unless (count($jobs)==0)
 
@@ -16,6 +16,7 @@
     <p class="text-info">no job found</p>
     @endunless
     </x-styling>
+</x-card>
 </x-bootstrapcss>
     
  
