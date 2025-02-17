@@ -10,17 +10,20 @@ Route::get('/', function () {
         return view('welcome');
     })->name('dashboard');
  Route::get('/jobs',function(){
+    
 return view('users.jobs', [
     'jobs' => [
         [
           'id'=>1,
           'title'=>'this is the best job to have in the entre world',
-          'status'=>'available fill in to apply'  
+          'status'=>'available fill in to apply',
+          'description'=>'Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.',
         ],
         [
             'id'=>2,
             'title'=>'the best job for an it expert who want to improve their woring skills',
             'status'=>'available to fill in',
+            'description'=>'Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.',
         ]
     ]
 ]);

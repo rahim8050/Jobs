@@ -1,3 +1,4 @@
+{{-- @props('title'->['tile']) --}}
 <x-layout>
     
     <body class="bg-gradient-primary">
