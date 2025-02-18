@@ -30,7 +30,7 @@ Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])
 Route::get('/table', [WorkController::class, 'table'])->name('table');
 Route::get('/register',[UserController::class, 'register'])->name('register');
-Route::get('/update',[WorkFactory::class, 'update'])->name('update');
+// Route::get('/update',[WorkFactory::class, 'update'])->name('update');
 Route::post('/auth', [UserController::class, 'auth'])->name('auth');
 // add new user
 Route::post('/users', [UserController::class, 'store']);

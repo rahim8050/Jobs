@@ -8,6 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Work extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'user_id',
+        'title',
+        'tags',
+        'company',
+        'location',
+        'email',
+        'website',
+        'description',
+    ];
     public static function all($columns = ['*']){
         return [
             [
