@@ -1,5 +1,8 @@
-
+<x-card>
     {{-- @include('partials.search') --}}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+     
     @unless (count($jobs)==0)
 
     @foreach ($jobs as $job )
@@ -15,8 +18,9 @@
     @else
     <p class="text-info">no job found</p>
     @endunless
+</div>
+</x-card>
 
-    </div>
 
 
     
