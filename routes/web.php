@@ -24,7 +24,7 @@ return view('users.jobs', [
     return view('users.job',[
         'job'=> Work::find($id)
     ]);
- });
+ })->name('show');
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
 Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])

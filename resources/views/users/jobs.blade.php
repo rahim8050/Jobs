@@ -1,12 +1,12 @@
-@include('partials.hero')
-@include('partials.search')
-
-{{-- <x-card> --}}
+{{-- @include('partials.hero')
+@include('partials.search') --}}
+@extends('layout')
+@section('content')
     @unless (count($jobs) == 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @foreach ($jobs as $job)
                  <!-- Item 1 -->
-                 {{-- <div class="bg-gray-50 border border-gray-200 rounded p-6"> --}}
+                 <div class="bg-gray-50 border border-gray-200 rounded p-6">
                     <div class="flex">
                         <img
                             class="hidden w-48 mr-6 md:block"
@@ -15,7 +15,7 @@
                         />
                         <div>
                             <h3 class="text-2xl">
-                                <a href="show.html">{{$job->title}}</a>
+                                <a href="/jobs/{{$job->id}}"">{{$job->title}}</a>
                             </h3>
                             <div class="text-xl font-bold mb-4">Acme Corp</div>
                             <ul class="flex">
@@ -45,13 +45,14 @@
                                 MA
                             </div>
                         </div>
-                    {{-- </div> --}}
+                    </div>
             @endforeach
         </div>
     @else
         <p class="text-info">no job found</p>
     @endunless
-{{-- </x-card> --}}
+    @endsection
+
 
 
 
