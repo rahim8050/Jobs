@@ -1,7 +1,7 @@
 @include('partials.hero')
 @include('partials.search')
 
-<x-card>
+{{-- <x-card> --}}
     @unless (count($jobs) == 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @foreach ($jobs as $job)
@@ -51,7 +51,7 @@
     @else
         <p class="text-info">no job found</p>
     @endunless
-</x-card>
+{{-- </x-card> --}}
 
 
 
