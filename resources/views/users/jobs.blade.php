@@ -14,9 +14,9 @@
                     />
                     <div>
                         <h3 class="text-2xl">
-                            <a href="show.html">Senior Laravel Developer</a>
+                            <a href="show.html">{{$job->title}}</a>
                         </h3>
-                        <div class="text-xl font-bold mb-4">Acme Corp</div>
+                        <div class="text-xl font-bold mb-4">{{$job->company}}</div>
                         <ul class="flex">
                             <li
                                 class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
@@ -40,8 +40,8 @@
                             </li>
                         </ul>
                         <div class="text-lg mt-4">
-                            <i class="fa-solid fa-location-dot"></i> Boston,
-                            MA
+                            <i class="fa-solid fa-location-dot"></i> {{$job->location}}
+                            
                         </div>
                     </div>
                 </div>
