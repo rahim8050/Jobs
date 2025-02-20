@@ -1,7 +1,9 @@
-{{-- @include('partials.hero')
-@include('partials.search') --}}
+
+
 @extends('display')
 @section('content')
+@include('partials.hero')
+@include('partials.search')
     @unless (count($jobs) == 0)
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             @foreach ($jobs as $job)
@@ -14,7 +16,7 @@
                     />
                     <div>
                         <h3 class="text-2xl">
-                            <a href="show.html">{{$job->title}}</a>
+                            <a href="/jobs/{id}">{{$job->title}}</a>
                         </h3>
                         <div class="text-xl font-bold mb-4">{{$job->company}}</div>
                         <ul class="flex">
