@@ -45,7 +45,7 @@
                 </li>
             </ul>
         </nav>
-    <h1>RAHIM JOBS</h1>
+    
     <main>
     @yield('content')
     </main>
