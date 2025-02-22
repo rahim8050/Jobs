@@ -1,6 +1,8 @@
 @extends('display')
 @section('content')
 
+@include('partials.search')
+
        <h2>{{$job['title']}}</h2>
  
    
