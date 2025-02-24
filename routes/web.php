@@ -20,9 +20,9 @@ return view('users.jobs', [
    
  })->name('jobs');  
 //  single job
- Route::get('/jobs/{id}',function($id){
-    return view('users.job',[
-        'job'=> Work::find($id)
+ Route::get('/jobs/{job}',function(Work $job){
+    return view('users.job', [
+        'job' => $job
     ]);
  })->name('show');
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
