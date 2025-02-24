@@ -1,5 +1,5 @@
 @props(['job'])
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="border border-gray-200 w-full mb-6">
     <div class="flex">
         <img
             class="hidden w-48 mr-6 md:block"
