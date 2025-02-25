@@ -1,9 +1,9 @@
 @props(['job'])
-<div class="border border-gray-200 w-full mb-6">
+
     <div class="flex">
         <img
             class="hidden w-48 mr-6 md:block"
-            src="{{('frontend/img/rahim.jpeg')}}"
+            src="{{ url('frontend/img/rahim.jpeg') }}"
             alt=""
         />
         <div>
@@ -35,8 +35,6 @@
             </ul>
             <div class="text-lg mt-4">
                 <i class="fa-solid fa-location-dot"></i> {{$job->location}}
-                
             </div>
         </div>
     </div>
-</div>
