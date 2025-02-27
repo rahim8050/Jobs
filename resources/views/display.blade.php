@@ -12,6 +12,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
@@ -40,6 +42,11 @@
                 <li>
                     <a href="login.html" class="hover:text-laravel">
                         <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/') }}" class="hover:text-laravel">
+                        <i class="fa fa-home" aria-hidden="true" ></i> MAIN MENU
                     </a>
                 </li>
             </ul>

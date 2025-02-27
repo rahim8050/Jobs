@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Work;
 use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
     public function index()
     {
-        return view('work.index');
+        return view('users.jobs', [
+            'jobs' => Work::all()
+        ]);
     }
     public function create()
     {
@@ -22,9 +25,11 @@ class WorkController extends Controller
         ]);
         return redirect()->route('work.index');
     }
-    public function show($id)
+    public function show(Work $job)
     {
-        return view('work.show');
+        return view('work.show', [
+            'job' => $job
+        ]);
     }
     public function edit($id)
     {
@@ -36,7 +41,7 @@ class WorkController extends Controller
             'name' => 'required',
             'description' => 'required',
         ]);
-        return redirect()->route('work.index');
+        return redirect()->route('users.job');
     }
     public function destroy($id)
     {

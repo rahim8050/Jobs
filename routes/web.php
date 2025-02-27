@@ -10,15 +10,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
         return view('welcome');
     })->name('dashboard');
- Route::get('/jobs',function(){
+//  Route::get('/jobs',function(){
     
-return view('users.jobs', [
-    'jobs' => Work::all()
+// return view('users.jobs', [
+//     'jobs' => Work::all()
      
     
-]);
+// ]);
    
- })->name('jobs');  
+//  })->name('jobs');  
+Route::get('/jobs', [WorkController::class, 'index'])->name('jobs');
+// Route::get('/jobs/create', [WorkController::class, 'create'])->name('create');
+// Route::post('/jobs', [WorkController::class, 'store']);
 //  single job
  Route::get('/jobs/{job}',function(Work $job){
     return view('users.job', [
