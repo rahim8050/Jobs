@@ -1,143 +1,112 @@
-{{-- @props('title'->['tile']) --}}
-<x-tailwindcss>
-    
-    <body class="bg-gradient-primary">
-    
-        <div class="container">
-    
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                        <div class="col-lg-7">
-                            <div class="p-5">
-                               
-                               
-                                    <x-card class="p-10  max-w-lg mx-auto mt-24 ">
-                                
-                                    <header class="text-center">
-                                        <h2 class="text-2xl font-bold uppercase mb-1">
-                                            Register
-                                        </h2>
-                                        <p class="mb-4">Create an account to post gigs</p>
-                                    </header>
-                                
-                                    <form method="POST" action="/users">
-                                        @csrf
-                                        <div class="mb-6">
-                                            <label for="name" class="inline-block text-lg mb-2">
-                                                Name
-                                            </label>
-                                            <input
-                                                type="text"
-                                                class="border border-gray-200 rounded p-2 w-full"
-                                                name="name" value="{{old('name')}}"
-                                            />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="{{url('frontend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{{url('frontend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name" name="name">
                                             @error('name')
-                                               <p class="text-red-500 text xs mt-1">{{$message}}</p> 
+                                            <div class="alert alert-danger">{{ $message }}</div>
                                             @enderror
-                                        </div>
-                                
-                                        <div class="mb-6">
-                                            <label for="email" class="inline-block text-lg mb-2"
-                                                >Email</label
-                                            >
-                                            <input
-                                                type="email"
-                                                class="border border-gray-200 rounded p-2 w-full"
-                                                name="email" value="{{old('email')}}"
-                                            />
-                                            @error('email')
-                                            <p class="text-red-500 text-xs mt-1">
-                                                Please enter a valid email
-                                            </p> 
-                                            @enderror
-                                           
-                                        </div>
-                                
-                                        <div class="mb-6">
-                                            <label
-                                                for="password"
-                                                class="inline-block text-lg mb-2"
-                                            >
-                                                Password
-                                            </label>
-                                            <input
-                                                type="password"
-                                                class="border border-gray-200 rounded p-2 w-full"
-                                                name="password" value="{{old('password')}}"
-                                            />
-                                            @error('password')
-                                            <p class="text-red-500 text-xs mt-1">
-                                                Please enter a valid password
-                                            </p> 
-                                            @enderror
-                                        </div>
-                                
-                                        <div class="mb-6">
-                                            <label
-                                                for="password2"
-                                                class="inline-block text-lg mb-2"
-                                            >
-                                                Confirm Password
-                                            </label>
-                                            <input
-                                                type="password"
-                                                class="border border-gray-200 rounded p-2 w-full"
-                                                name="password_confirmation" value="{{old('password_confirmation')}}"
-                                            />
-                                            @error('password_confirmation')
-                                            <p class="text-red-500 text-xs mt-1">
-                                                Please enter a valid email
-                                            </p> 
-                                            @enderror
-                                        </div>
-                                
-                                        <div class="mb-6">
-                                            <button
-                                                type="submit"
-                                                class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
-                                            >
-                                                Sign Up
-                                            </button>
-                                        </div>
-                                
-                                        <div class="mt-8">
-                                            {{-- <p>
-                                                Already have an account?
-                                                <a href="login.html" class="text-laravel"
-                                                    >Login</a
-                                                >
-                                            </p> --}}
-                                        </div>
-                                    </form>
-                                    </x-card>
-                                
-                               
-                                     
-                                    
-                                <hr>
-                                {{-- <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                </div> --}}
-                                <div class="text-center">
-                                    <a class="small" href="{{url ('login')}}">Already have an account? Login!</a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name">
+                                    </div>
                                 </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    Register Account
+                                </a>
+                                <hr>
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
         </div>
-    
-       
-   
 
+    </div>
 
+      <!-- Bootstrap core JavaScript-->
+      <script src="{{('frontend/vendor/jquery/jquery.min.js')}}"></script>
+      <script src="{{url('frontend/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src="{{url('frontend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="{{url('frontend/js/sb-admin-2.min.js')}}"></script>
+  
+      <!-- Page level plugins -->
+      <script src="{{url('frontend/vendor/chart.js/Chart.min.js')}}"></script>
+  
+      <!-- Page level custom scripts -->
+      <script src="{{url('frontend/js/demo/chart-area-demo.js')}}"></script>
+      <script src="{{url('frontend/js/demo/chart-pie-demo.js')}}"></script>
 
+</body>
 
-
-
-</x-tailwindcss>
+</html>
