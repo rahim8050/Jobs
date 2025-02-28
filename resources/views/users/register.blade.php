@@ -1,5 +1,5 @@
 {{-- @props('title'->['tile']) --}}
-<x-layout>
+<x-tailwindcss>
     
     <body class="bg-gradient-primary">
     
@@ -12,9 +12,7 @@
                         <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
                         <div class="col-lg-7">
                             <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
-                                </div>
+                               
                                
                                     <x-card class="p-10  max-w-lg mx-auto mt-24 ">
                                 
@@ -106,12 +104,12 @@
                                         </div>
                                 
                                         <div class="mt-8">
-                                            <p>
+                                            {{-- <p>
                                                 Already have an account?
                                                 <a href="login.html" class="text-laravel"
                                                     >Login</a
                                                 >
-                                            </p>
+                                            </p> --}}
                                         </div>
                                     </form>
                                     </x-card>
@@ -120,9 +118,9 @@
                                      
                                     
                                 <hr>
-                                <div class="text-center">
+                                {{-- <div class="text-center">
                                     <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                </div>
+                                </div> --}}
                                 <div class="text-center">
                                     <a class="small" href="{{url ('login')}}">Already have an account? Login!</a>
                                 </div>
@@ -142,4 +140,4 @@
 
 
 
-</x-layout>
+</x-tailwindcss>
