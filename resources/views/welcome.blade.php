@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="{{url('frontend/img/home.ico')}}">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -49,7 +49,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">RAHIM JOBS <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">RAHIM JOBS </div>
             </a>
 
             <!-- Divider -->
@@ -63,22 +63,22 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('login')}}">
-                 
+
                     <i class="fa-solid fa-right-to-bracket"></i>
-                  
+
 
                     <span>Login</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('register')}}">
-                 
+
                     <i class="fa-solid fa-address-card"></i>
 
                     <span>Register</span></a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url('jobs')}}">
-                 
+
                     <i class="fa-solid fa-user-doctor"></i>
 
                     <span>Available Jobs</span></a>
@@ -87,10 +87,10 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-           
-           
 
-            
+
+
+
 
 
             <!-- Nav Item - Charts -->
@@ -146,7 +146,7 @@
                         <div class="input-group">
                             <input type="text" name="search" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append"> 
+                            <div class="input-group-append">
                                 <button class="btn btn-primary" type="submit">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
@@ -179,9 +179,9 @@
                                     </div>
                                 </form>
                             </div>
-            
+
                         </li>
-                       
+
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <span class="navbar-text">
