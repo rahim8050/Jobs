@@ -28,7 +28,8 @@ Route::get('/jobs', [WorkController::class, 'index'])->name('jobs');
         'job' => $job
     ]);
  })->name('show');
- // sunday jobs
+ // sunday jobs while chilling on the spot
+//  what are sundays for?
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
 Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])
