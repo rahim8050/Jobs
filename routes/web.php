@@ -11,14 +11,14 @@ Route::get('/', function () {
         return view('welcome');
     })->name('dashboard');
 //  Route::get('/jobs',function(){
-    
+
 // return view('users.jobs', [
 //     'jobs' => Work::all()
-     
-    
+
+
 // ]);
-   
-//  })->name('jobs');  
+
+//  })->name('jobs');
 Route::get('/jobs', [WorkController::class, 'index'])->name('jobs');
 // Route::get('/jobs/create', [WorkController::class, 'create'])->name('create');
 // Route::post('/jobs', [WorkController::class, 'store']);
@@ -28,6 +28,7 @@ Route::get('/jobs', [WorkController::class, 'index'])->name('jobs');
         'job' => $job
     ]);
  })->name('show');
+ // sunday jobs
 // Route::get('/jobs',[WorkController::class,'jobs'])->name('jobs');
 Route::get('/login', [UserController::class, 'login'])->name('login');
 // Route::get('/works/{work}',[])
